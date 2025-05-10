@@ -254,6 +254,11 @@
   width: auto;
 }
 
+#review-form .card-btn,
+#review-form .form-group {
+  margin-top: 20px;
+}
+
 /* New Movie */
 
 .new-movie-container {

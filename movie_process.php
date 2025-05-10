@@ -58,6 +58,20 @@ if ($type === "create") {
     } else {
         $message->setMessage("Você precisa adicionar pelo menos: título, descrição e categoria!", "error", "back");
     }
+} else if ($type === "delete") {
+    $id = filter_input(INPUT_POST, "id");
+
+    $movie = $movieDao->findById($id);
+
+    if ($movie) {
+        if ($movie->users_id == $userData->id) {
+            $movieDao->destroy($movie->id);
+        } else {
+            $message->setMessage("Informações inválidas.", "error", "index");
+        }
+    } else {
+        $message->setMessage("Informações inválidas.", "error", "index");
+    }
 } else {
     $message->setMessage("Informações inválidas.", "error", "index");
 }
