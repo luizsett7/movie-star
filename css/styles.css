@@ -250,13 +250,20 @@
 
 .edit-profile-page .card-btn,
 #add-movie-container .card-btn,
-#review-form .card-btn {
+#review-form .card-btn,
+#edit-movie-form .card-btn {
   width: auto;
 }
 
 #review-form .card-btn,
-#review-form .form-group {
+#review-form .form-group,
+#edit-movie-form .card-btn,
+#edit-movie-form .form-group {
   margin-top: 20px;
+}
+
+#edit-movie-form label {
+  margin-bottom: 10px;
 }
 
 /* New Movie */
