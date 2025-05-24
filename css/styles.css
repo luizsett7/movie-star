@@ -595,9 +595,17 @@
     width: 140px;
   }
 
-  .edit-btn {
+  .table th,
+  .table td {
+    padding: 0.6rem 0.2rem;
+  }
+
+  .edit-btn,
+  .delete-btn {
     display: block;
     margin-bottom: 10px;
+    padding: 3px;
+    width: 100%;
   }
 
   .movie-image-container {
