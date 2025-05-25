@@ -134,7 +134,7 @@
 }
 
 .fas.fa-star {
-  color: #f5c518;
+  color: #f5c518 !important;
 }
 
 .rating {

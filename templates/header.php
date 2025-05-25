@@ -79,8 +79,8 @@ $userData = $userDao->verifyToken(false);
             </div>
         </nav>
     </header>
-    <?php if (!empty($flassMessage["msg"])): ?>
+    <?php if (!empty($flashMessage["msg"])): ?>
         <div class="msg-container">
-            <p class="msg <?= $flassMessage["type"] ?>"><?= $flassMessage["msg"] ?></p>
+            <p class="msg <?= $flashMessage["type"] ?>"><?= $flashMessage["msg"] ?></p>
         </div>
     <?php endif; ?>
